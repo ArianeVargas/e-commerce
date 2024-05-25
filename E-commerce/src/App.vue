@@ -36,8 +36,8 @@
         <div class="lista">
           <div v-for="(item, index) in carrito" :key="index" class="carrito-item">
             <span><img :src="item.producto.imagenSrc" /><span class="nombre">{{
-              item.producto.nombre
-            }}</span>
+        item.producto.nombre
+      }}</span>
               <span class="cantidad">{{ item.cantidad }}</span>
               <span class="precio">{{ formatoPesoColombiano(item.producto.precio) }}</span></span>
             <button class="eliminar" @click="eliminarDelCarrito(index)">
@@ -67,18 +67,18 @@ import "boxicons/css/boxicons.min.css";
 let carrito = ref([]);
 let mostrarModal = ref(false);
 
-import pro1 from "./assets/pro1.jpg";
-import pro2 from "./assets/pro2.jpg";
-import pro3 from "./assets/pro3.jpg";
-import pro4 from "./assets/pro4.jpg";
-import pro5 from "./assets/pro5.jpg";
-import pro6 from "./assets/pro6.jpg";
-import pro7 from "./assets/pro7.jpg";
-import pro8 from "./assets/pro8.jpg";
-import pro9 from "./assets/pro9.jpg";
-import pro10 from "./assets/pro10.jpg";
-import pro11 from "./assets/pro11.jpg";
-import pro12 from "./assets/pro12.jpg";
+import pro1 from "../compressed-images/pro1.jpg";
+import pro2 from "../compressed-images/pro2.jpg";
+import pro3 from "../compressed-images/pro3.jpg";
+import pro4 from "../compressed-images/pro4.jpg";
+import pro5 from "../compressed-images/pro5.jpg";
+import pro6 from "../compressed-images/pro6.jpg";
+import pro7 from "../compressed-images/pro7.jpg";
+import pro8 from "../compressed-images/pro8.jpg";
+import pro9 from "../compressed-images/pro9.jpg";
+import pro10 from "../compressed-images/pro10.jpg";
+import pro11 from "../compressed-images/pro11.jpg";
+import pro12 from "../compressed-images/pro12.jpg";
 
 let listaProductos = ref([
   {
@@ -202,7 +202,7 @@ const calcularTotal = () => {
   );
 }
 
-</script> 
+</script>
 
 <style>
 * {
